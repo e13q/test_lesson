@@ -3,9 +3,9 @@ import os
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 
-#   Функцию создал, но не совсем понимаю, как ее лучше использовать, 
-#   так как для expand ulr нужнен запаршенный url, 
-#   ведь протоколы http/https ломают expand по api запросу
+#   Р¤СѓРЅРєС†РёСЋ СЃРѕР·РґР°Р», РЅРѕ РЅРµ СЃРѕРІСЃРµРј РїРѕРЅРёРјР°СЋ, РєР°Рє РµРµ Р»СѓС‡С€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ, 
+#   С‚Р°Рє РєР°Рє РґР»СЏ expand ulr РЅСѓР¶РЅРµРЅ Р·Р°РїР°СЂС€РµРЅРЅС‹Р№ url, 
+#   РІРµРґСЊ РїСЂРѕС‚РѕРєРѕР»С‹ http/https Р»РѕРјР°СЋС‚ expand РїРѕ api Р·Р°РїСЂРѕСЃСѓ
 def is_bitlink(url):
     parsedUrl = urlparse(url)
     if parsedUrl.hostname == 'bit.ly':
